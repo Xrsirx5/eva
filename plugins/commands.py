@@ -43,12 +43,15 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ], [
+            InlineKeyboardButton('🔎 𝗦𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('😎 𝗨𝗽𝘁𝗮𝗱𝗲 😎', url='https://t.me/TeamEvamaria')
+            ], [
+            InlineKeyboardButton('🤠 𝗛𝗲𝗹𝗽 🤠', callback_data='help'),
+            InlineKeyboardButton('📩 𝗔𝗯𝗼𝘂𝘁 📩', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗺𝗲 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+            InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Xrsirx5')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +70,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🤖𝗝𝗼𝗶𝗻 𝗻𝗼𝘄🤖", url=invite_link.invite_link
                 )
             ]
         ]
@@ -86,12 +89,15 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ], [
+            InlineKeyboardButton('🔎 𝗦𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('😎 𝗨𝗽𝘁𝗮𝗱𝗲 😎', url='https://t.me/TeamEvamaria')
+            ], [
+            InlineKeyboardButton('🤠 𝗛𝗲𝗹𝗽 🤠', callback_data='help'),
+            InlineKeyboardButton('📩 𝗔𝗯𝗼𝘂𝘁 📩', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗺𝗲 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+            InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Xrsirx5')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -220,7 +226,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('𝗡𝗼 𝘀𝘂𝗰𝗵 𝗳𝗶𝗹𝗲 𝗲𝘅𝗶𝘀𝘁.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -375,7 +381,7 @@ async def settings(client, message):
                 await message.reply_text("Make sure I'm present in your group!!", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("𝗜 𝗮𝗺 𝗻𝗼𝘁 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝗮𝗻𝘆 𝗴𝗿𝗼𝘂𝗽𝘀!!", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -462,7 +468,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            text=f"<b>Change Your Settings for {title} As Your Wish</b>⚙\n ✍𝗻𝗼𝘁𝗲 : 𝘀𝘂𝗿𝗲 𝘁𝗵𝗮𝘁 𝗜 𝗮𝗺 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode="html",
@@ -476,7 +482,7 @@ async def save_template(client, message):
     sts = await message.reply("Checking template")
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"You are anonymous admin. Use <code>/connect</code> {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -487,10 +493,10 @@ async def save_template(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("𝗠𝗮𝗸𝗲 𝘀𝘂𝗿𝗲 𝗜'𝗺 𝗽𝗿𝗲𝘀𝗲𝗻𝘁 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽!!", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("𝗜'𝗺 𝗻𝗼𝘁 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱 𝘁𝗼 𝗮𝗻𝘆 𝗴𝗿𝗼𝘂𝗽𝘀!", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
