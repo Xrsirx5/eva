@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('🔏𝗣𝗶𝗿𝗮𝗰𝘆 𝗜𝘀 𝗖𝗿𝗶𝗺𝗲🔏')
         buttons = []
         for groupid in groupids:
             try:
@@ -364,21 +364,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('⚠️𝗛𝗲𝘆 {query.from_user.first_name}! 𝗖𝗵𝗲𝗰𝗸 𝗕𝗼𝘁 𝗣𝗠 𝗜 𝗵𝗮𝘃𝗲 𝘀𝗲𝗻𝘁 𝗺𝗼𝘃𝗶𝗲 𝗳𝗶𝗹𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗣𝗠 ⚠️', show_alert=True)
         except UserIsBlocked:
-            await query.answer('Unblock the bot mahn !', show_alert=True)
+            await query.answer('😉𝗨𝗻𝗯𝗹𝗼𝗰𝗸 𝘁𝗵𝗲 𝗯𝗼𝘁 😉 !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
+            await query.answer("𝗛𝗲𝘆 {query.from_user.first_name}! 𝗜 𝗟𝗶𝗸𝗲 𝗬𝗼𝘂𝗿 𝗦𝗺𝗮𝗿𝘁𝗻𝗲𝘀𝘀, 𝗕𝘂𝘁 𝗗𝗼𝗻'𝘁 𝗕𝗲 𝗢𝘃𝗲𝗿𝘀𝗺𝗮𝗿𝘁 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('No such file exist.')
+            return await query.answer('𝗡𝗼 𝘀𝘂𝗰𝗵 𝗳𝗶𝗹𝗲 𝗲𝘅𝗶𝘀𝘁.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -405,12 +405,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-        ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            ], [
+            InlineKeyboardButton('🔎 𝗦𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('😎 𝗨𝗽𝘁𝗮𝗱𝗲 😎', url='https://t.me/TeamEvamaria')
+            ], [
+            InlineKeyboardButton('🤠 𝗛𝗲𝗹𝗽 🤠', callback_data='help'),
+            InlineKeyboardButton('📩 𝗔𝗯𝗼𝘂𝘁 📩', callback_data='about')
+            ],[
+            InlineKeyboardButton('👥 𝗦𝗵𝗮𝗿𝗲 𝗺𝗲 👥', url='https://t.me/share/url?url=@Mohalal_robot'),
+            InlineKeyboardButton('🧑‍💻 𝗠𝘆 𝗱𝗲𝘃 🧑‍💻', url='https://t.me/Xrsirx5')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -418,7 +421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('Piracy Is Crime')
+        await query.answer('🔏𝗣𝗶𝗿𝗮𝗰𝘆 𝗜𝘀 𝗖𝗿𝗶𝗺𝗲🔏')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝗙𝗶𝗹𝘁𝗲𝗿', callback_data='sar') 
