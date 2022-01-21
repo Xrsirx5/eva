@@ -11,25 +11,25 @@ class script(object):
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/EvamariaTG/EvaMaria  
+-Mᴏʜᴀʟᴀʟ ɪs ᴀ ᴄʟᴏsᴇᴅ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏɪᴇᴄᴛ 
+- Bᴀsᴇ Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ - https://github.com/EvamariaTG/EvaMaria  
 
-<b>DEVS:</b>
-- <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
+<b><u>DEVS:</u></b>
+- <a href=https://t.me/Xrsirx5>Xrsirx5</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+- Fɪʟᴛᴇʀ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜsᴇʀs ᴄᴀɴ sᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇs ғᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ᴍᴏʜᴀʟᴀʟ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪs ғᴏᴜɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ
 
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+𝟷. Mᴏʜᴀʟᴀʟ sʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟʟᴀɢᴇ.
+𝟸. ᴏɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴀᴅᴅ ғɪʟᴛᴇʀs ɪɴ ᴀ ᴄʜᴀᴛ.
+𝟹. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴs ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏғ 𝟼𝟺 ᴄʜᴀʀᴀᴄᴛᴇʀs.
 
 <b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+• /filter - <b>add a filter in chat</b>
+• /filters - <b>list all the filters of a chat</b>
+• /del - <b>delete a specific filter in chat</b>
+• /delall - <b>delete the whole filters in a chat (chat owner only)</b>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Eva Maria Supports both url and alert inline buttons.
@@ -47,18 +47,18 @@ class script(object):
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+𝟷. Mᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏғ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪғ ɪᴛ's ᴘʀɪᴠᴀᴛᴇ.
+𝟸. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇs ɴᴏᴛ ᴄᴏɴᴛᴀɪɴs ᴄᴀᴍʀɪᴘs, ᴘᴏʀɴ ᴀɴᴅ ғᴀᴋᴇ ғɪʟᴇs.
+𝟹. Fᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇs.
+ I'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ғɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ."""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+- Usᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ PM ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ғɪʟᴛᴇʀs 
+- ɪᴛ ʜᴇʟᴘs ᴛᴏ ᴀᴠᴏɪᴅ sᴘᴀᴍᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘs.
 
 <b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+𝟷. Oɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
+𝟸. Sᴇɴᴅ <code>/ᴄᴏɴɴᴇᴄᴛ</code> ғᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ᴜʀ PM
 
 <b>Commands and Usage:</b>
 • /connect  - <code>connect a particular chat to your PM</code>
